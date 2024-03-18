@@ -11,7 +11,8 @@ print(firstQuestion)
 firstAnswer =  input("Pretty dumb(a)\nAn opportunity to learn(b)\nSmart(c)\n")
 
 if firstAnswer=="b":
-    counter=counter+1
+    # or the standard counter = counter+1
+    counter=+1
 
 if counter!=0:
     print("Good Answer")
