@@ -3,8 +3,8 @@
 name = input("What's your name stranger? \n")
 
 print("Hi! "+name+" welcome to this very breath journey! \nWe are going to move forward towards a goal and you'll have to pick the correct way to reack the end!\nHow do you wish to move forward in this journey? \n")
-
-while True:
+continue_game = True
+while continue_game:
     beginGame = input("first of all, want to play the game? 'q to leave anything else to continue'")
 
     if beginGame =='q':
@@ -33,3 +33,9 @@ while True:
         print("thinking often feels like you are doing more that you actually are, take action!")
     else:
         print("invalid choice brother, think again on how you can move towards your goal")
+    
+    continue_input= input("\n\ndo you wish to try again? Press Y to continue N to quit:\n")
+    if continue_input=="Y":
+        continue
+    else:
+        continue_game = False
